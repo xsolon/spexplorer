@@ -1,6 +1,4 @@
-[submodule "--force"]
-	path = --force
-	url = https://github.com/xsolon/spexplorerjs.git
+
 [submodule "js/spexplorerjs"]
 	path = js/spexplorerjs
 	url = https://github.com/xsolon/spexplorerjs.git
