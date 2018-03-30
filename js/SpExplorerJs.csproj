@@ -1,0 +1,522 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="packages\Microsoft.Net.Compilers.2.7.0\build\Microsoft.Net.Compilers.props" Condition="Exists('packages\Microsoft.Net.Compilers.2.7.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7FAE293D-1564-4F57-B63A-4FB5AD2037D4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <Content Include="spexplorerjs\.eslintrc.js" />
+    <Content Include="spexplorerjs\expressApp.js">
+      <DependentUpon>package.json</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\gulpfile.js">
+      <DependentUpon>scripts.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\packer.js">
+      <DependentUpon>scripts.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\datatables\datatables.js" />
+    <Content Include="spexplorerjs\public\components\datatables\datatables.min.js" />
+    <Content Include="spexplorerjs\public\components\datatables\index.html" />
+    <Content Include="spexplorerjs\public\components\logger\logger.min.js.map" />
+    <Content Include="spexplorerjs\public\components\logger\test.html" />
+    <Content Include="spexplorerjs\public\components\mirrors\jseditor.html">
+      <DependentUpon>jseditor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\mirrors\jseditor.js" />
+    <Content Include="spexplorerjs\public\components\mirrors\jseditor.widget.cdn.html">
+      <DependentUpon>jseditor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\mirrors\jseditor.widget.inline.html">
+      <DependentUpon>jseditor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\mirrors\jsmirror.html">
+      <DependentUpon>jsmirror.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\mirrors\jsmirror.js" />
+    <Content Include="spexplorerjs\public\components\mirrors\jsmirror.widget.cdn.html">
+      <DependentUpon>jsmirror.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\mirrors\jsmirror.widget.inline.html">
+      <DependentUpon>jsmirror.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\mirrors\xmleditor.html">
+      <DependentUpon>xmleditor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\mirrors\xmleditor.js" />
+    <Content Include="spexplorerjs\public\components\mirrors\xmleditor.widget.cdn.html">
+      <DependentUpon>xmleditor.html</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\mirrors\xmleditor.widget.inline.html">
+      <DependentUpon>xmleditor.html</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\mirrors\xmlmirror.html">
+      <DependentUpon>xmlmirror.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\mirrors\xmlmirror.js" />
+    <Content Include="spexplorerjs\public\components\mirrors\xmlmirror.widget.cdn.html">
+      <DependentUpon>xmlmirror.html</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\mirrors\xmlmirror.widget.inline.html">
+      <DependentUpon>xmlmirror.html</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\customaction.editor.aspx">
+      <DependentUpon>customaction.editor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\customaction.editor.dev.aspx">
+      <DependentUpon>customaction.editor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\customaction.editor.local.aspx">
+      <DependentUpon>customaction.editor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\customaction.selector.aspx">
+      <DependentUpon>customaction.selector.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\list.editor.aspx">
+      <DependentUpon>list.editor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\list.editor.dev.aspx">
+      <DependentUpon>list.editor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\list.editor.js" />
+    <Content Include="spexplorerjs\public\components\sp\list.editor.local.aspx">
+      <DependentUpon>list.editor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\sp.explorer.aspx" />
+    <Content Include="spexplorerjs\public\components\sp\sp.explorer.js" />
+    <Content Include="spexplorerjs\public\components\sp\sp.explorer.local.aspx">
+      <DependentUpon>sp.explorer.aspx</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\treelight.aspx">
+      <DependentUpon>treelight.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\treelight.cdn.aspx">
+      <DependentUpon>treelight.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\ui.perms.aspx" />
+    <Content Include="spexplorerjs\public\components\sp\customaction.editor.js" />
+    <Content Include="spexplorerjs\public\components\sp\customaction.selector.js" />
+    <Content Include="spexplorerjs\public\components\sp\field.selector.aspx">
+      <DependentUpon>field.selector.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\field.selector.js" />
+    <Content Include="spexplorerjs\public\components\sp\index.html" />
+    <Content Include="spexplorerjs\public\components\sp\sp.web.html" />
+    <Content Include="spexplorerjs\public\components\sp\sp.web.js" />
+    <Content Include="spexplorerjs\public\components\sp\sp.web.min.js" />
+    <Content Include="spexplorerjs\public\components\sp\sp.web.widget.html" />
+    <Content Include="spexplorerjs\public\components\sp\treelight.html">
+      <DependentUpon>treelight.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\treelight.js" />
+    <Content Include="spexplorerjs\public\components\sp\treelight.local.aspx">
+      <DependentUpon>treelight.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\treelight.widget.cdn.html">
+      <DependentUpon>treelight.html</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\treelight.widget.inline.html">
+      <DependentUpon>treelight.html</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\ui.perms.js" />
+    <Content Include="spexplorerjs\public\components\string\string.js" />
+    <Content Include="spexplorerjs\public\components\string\string.min.js" />
+    <Content Include="spexplorerjs\public\components\string\test.html" />
+    <Content Include="spexplorerjs\public\pages\index\index.js" />
+    <Content Include="spexplorerjs\public\pages\index\index.min.js" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap-theme.css" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap-theme.min.css" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap.css" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap.min.css" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\spexp.css">
+      <DependentUpon>spexp.less</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\spexp.min.css">
+      <DependentUpon>spexp.css</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\js\bootstrap.js" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\js\bootstrap.min.js" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\js\npm.js" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\spexpbootstrap.css" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\spexpjs.css">
+      <DependentUpon>spexpjs.scss</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\spexpjs.min.css">
+      <DependentUpon>spexpjs.css</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\css\select2.css" />
+    <Content Include="spexplorerjs\public\vendor\select2\css\select2.min.css" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\af.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\ar.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\az.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\bg.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\bs.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\build.txt" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\ca.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\cs.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\da.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\de.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\dsb.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\el.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\en.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\es.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\et.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\eu.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\fa.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\fi.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\fr.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\gl.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\he.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\hi.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\hr.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\hsb.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\hu.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\hy.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\id.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\is.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\it.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\ja.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\km.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\ko.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\lt.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\lv.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\mk.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\ms.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\nb.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\nl.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\pl.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\ps.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\pt-BR.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\pt.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\ro.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\ru.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\sk.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\sl.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\sr-Cyrl.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\sr.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\sv.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\th.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\tk.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\tr.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\uk.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\vi.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\zh-CN.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\i18n\zh-TW.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\select2.full.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\select2.full.min.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\select2.js" />
+    <Content Include="spexplorerjs\public\vendor\select2\js\select2.min.js" />
+    <Content Include="spexplorerjs\scripts.js" />
+    <Content Include="spexplorerjs\server.js">
+      <DependentUpon>package.json</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\datatables\datatables.js" />
+    <Content Include="spexplorerjs\src\components\datatables\example1.html" />
+    <Content Include="spexplorerjs\src\components\datatables\template.html" />
+    <Content Include="spexplorerjs\src\components\mirrors\jseditor.html">
+      <DependentUpon>jseditor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\mirrors\jseditor.js" />
+    <Content Include="spexplorerjs\src\components\mirrors\jseditor.module.js">
+      <DependentUpon>jseditor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\mirrors\jsmirror.html">
+      <DependentUpon>jsmirror.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\mirrors\jsmirror.js" />
+    <Content Include="spexplorerjs\src\components\mirrors\jsmirror.module.js">
+      <DependentUpon>jsmirror.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\mirrors\jsmirror.template.html">
+      <DependentUpon>jsmirror.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\mirrors\xmleditor.html">
+      <DependentUpon>xmleditor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\mirrors\xmleditor.js" />
+    <Content Include="spexplorerjs\src\components\mirrors\xmleditor.module.js">
+      <DependentUpon>xmleditor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\mirrors\xmleditor.template.html">
+      <DependentUpon>xmleditor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\mirrors\xmlmirror.html">
+      <DependentUpon>xmlmirror.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\mirrors\xmlmirror.js" />
+    <Content Include="spexplorerjs\src\components\mirrors\xmlmirror.module.js">
+      <DependentUpon>xmlmirror.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\mirrors\xmlmirror.template.html">
+      <DependentUpon>xmlmirror.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\customaction.dal.js">
+      <DependentUpon>customaction.editor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\customaction.editor.html">
+      <DependentUpon>customaction.editor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\customaction.editor.js" />
+    <Content Include="spexplorerjs\src\components\sp\customaction.editor.module.js">
+      <DependentUpon>customaction.editor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\customaction.editor.template.html">
+      <DependentUpon>customaction.editor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\customaction.selector.html">
+      <DependentUpon>customaction.selector.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\customaction.selector.itemtemplate.html">
+      <DependentUpon>customaction.selector.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\customaction.selector.js" />
+    <Content Include="spexplorerjs\src\components\sp\customaction.selector.template.html">
+      <DependentUpon>customaction.selector.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\field.selector.fieldtemplate.html">
+      <DependentUpon>field.selector.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\field.selector.template.html">
+      <DependentUpon>field.selector.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\list.editor.module.js">
+      <DependentUpon>list.editor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\list.editor.template.html">
+      <DependentUpon>list.editor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\sp.explorer.js" />
+    <Content Include="spexplorerjs\src\components\sp\sp.explorer.module.js">
+      <DependentUpon>sp.explorer.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\sp.explorer.template.html">
+      <DependentUpon>sp.explorer.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\sp.list.js" />
+    <Content Include="spexplorerjs\src\components\sp\sp.web.html">
+      <DependentUpon>sp.web.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\sp.web.module.js">
+      <DependentUpon>sp.web.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\spPage.aspx" />
+    <Content Include="spexplorerjs\src\components\sp\spPage16.aspx" />
+    <Content Include="spexplorerjs\src\components\sp\treelight.html">
+      <DependentUpon>treelight.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\treelight.js" />
+    <Content Include="spexplorerjs\src\components\sp\treelight.module.js">
+      <DependentUpon>treelight.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\treelight.template.html">
+      <DependentUpon>treelight.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\ui.perms.html">
+      <DependentUpon>ui.perms.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\ui.perms.js" />
+    <Content Include="spexplorerjs\src\components\sp\ui.perms.template.html">
+      <DependentUpon>ui.perms.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\user.editor.js" />
+    <Content Include="spexplorerjs\src\components\widget.base.js" />
+    <Content Include="spexplorerjs\src\scripts\packer.js" />
+    <Content Include="spexplorerjs\src\components\sp\sp.base.js" />
+    <Content Include="spexplorerjs\src\components\sp\sp.web.js" />
+    <Content Include="spexplorerjs\src\components\string\string.js" />
+    <Content Include="spexplorerjs\src\pages\app1\app1.css" />
+    <Content Include="spexplorerjs\src\pages\app1\app1.html" />
+    <Content Include="spexplorerjs\src\pages\app1\app1.js" />
+    <Content Include="spexplorerjs\src\pages\index\index.js" />
+    <Content Include="spexplorerjs\src\scripts\mytransforms.js" />
+    <Content Include="spexplorerjs\src\scripts\widgettransforms.js" />
+    <Content Include="spexplorerjs\uglify.js">
+      <DependentUpon>scripts.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\views\error.ejs" />
+    <Content Include="spexplorerjs\views\index.ejs" />
+    <Content Include="spexplorerjs\LICENSE" />
+    <Content Include="spexplorerjs\package.json" />
+    <Content Include="spexplorerjs\README.md" />
+    <Content Include="spexplorerjs\public\components\loader\loader.min.js.map" />
+    <Content Include="spexplorerjs\public\pages\index\index.min.js.map" />
+    <Content Include="spexplorerjs\public\components\string\string.min.js.map" />
+    <Content Include="spexplorerjs\public\components\datatables\datatables.min.js.map" />
+    <Content Include="spexplorerjs\public\components\sp\sp.web.min.js.map" />
+    <Content Include="spexplorerjs\src\components\sp\list.editor.js" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\spexpbootstrap.less" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\spexpjs.scss" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap-theme.css.map" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap-theme.min.css.map" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap.css.map" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap.min.css.map" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\spexp.less" />
+    <Content Include="spexplorerjs\src\components\sp\field.selector.js" />
+    <Content Include="spexplorerjs\views\components.ejs" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="spexplorerjs\public\components\loader\loader.js" />
+    <Content Include="spexplorerjs\public\components\loader\loader.min.js" />
+    <Content Include="spexplorerjs\public\components\logger\logger.js" />
+    <Content Include="spexplorerjs\public\components\logger\logger.min.js" />
+    <Content Include="spexplorerjs\public\refs\bootstrap.min.js" />
+    <Content Include="spexplorerjs\public\refs\jquery.min.js" />
+    <Content Include="spexplorerjs\public\stylesheets\style.css" />
+    <Content Include="spexplorerjs\routes\index.js" />
+    <Content Include="spexplorerjs\routes\users.js" />
+    <Content Include="spexplorerjs\src\components\loader\loader.js" />
+    <Content Include="spexplorerjs\src\components\loader\module.js" />
+    <Content Include="spexplorerjs\src\components\logger\logger.js" />
+    <Content Include="spexplorerjs\src\scripts\eslint.js" />
+    <Content Include="spexplorerjs\webpack.config.js">
+      <DependentUpon>scripts.js</DependentUpon>
+    </Content>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="spexplorerjs\public\images\" />
+    <Folder Include="spexplorerjs\public\javascripts\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>24703</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:24703/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.Net.Compilers.2.7.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Net.Compilers.2.7.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "spexplorerjs/public/vendor/bootstrap/css/spexpbootstrap.css",
+    "inputFile": "spexplorerjs/public/vendor/bootstrap/css/spexpbootstrap.less"
+  },
+  {
+    "outputFile": "spexplorerjs/public/vendor/bootstrap/css/spexpjs.css",
+    "inputFile": "spexplorerjs/public/vendor/bootstrap/css/spexpjs.scss"
+  },
+  {
+    "outputFile": "spexplorerjs/public/vendor/bootstrap/3.3.7/css/spexp.css",
+    "inputFile": "spexplorerjs/public/vendor/bootstrap/3.3.7/css/spexp.less"
+  }
+]
