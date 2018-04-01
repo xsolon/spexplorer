@@ -155,6 +155,10 @@
     <Content Include="spexplorerjs\public\components\sp\sp.explorer.local.aspx">
       <DependentUpon>sp.explorer.aspx</DependentUpon>
     </Content>
+    <Content Include="spexplorerjs\public\components\sp\sp.wizard.aspx" />
+    <Content Include="spexplorerjs\public\components\sp\sp.wizard.dev.aspx" />
+    <Content Include="spexplorerjs\public\components\sp\sp.wizard.js" />
+    <Content Include="spexplorerjs\public\components\sp\sp.wizard.local.aspx" />
     <Content Include="spexplorerjs\public\components\sp\treelight.aspx">
       <DependentUpon>treelight.js</DependentUpon>
     </Content>
@@ -192,6 +196,7 @@
     <Content Include="spexplorerjs\public\components\string\test.html" />
     <Content Include="spexplorerjs\public\pages\index\index.js" />
     <Content Include="spexplorerjs\public\pages\index\index.min.js" />
+    <Content Include="spexplorerjs\public\pages\index\sample.html" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap-theme.css" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap-theme.min.css" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap.css" />
@@ -292,6 +297,8 @@
     <Content Include="spexplorerjs\src\components\datatables\datatables.js" />
     <Content Include="spexplorerjs\src\components\datatables\example1.html" />
     <Content Include="spexplorerjs\src\components\datatables\template.html" />
+    <Content Include="spexplorerjs\src\components\loader\loaderspwizard.js" />
+    <Content Include="spexplorerjs\src\components\loader\wizard.js" />
     <Content Include="spexplorerjs\src\components\mirrors\jseditor.html">
       <DependentUpon>jseditor.js</DependentUpon>
     </Content>
@@ -378,6 +385,10 @@
     <Content Include="spexplorerjs\src\components\sp\sp.web.module.js">
       <DependentUpon>sp.web.js</DependentUpon>
     </Content>
+    <Content Include="spexplorerjs\src\components\sp\sp.wizard.js" />
+    <Content Include="spexplorerjs\src\components\sp\sp.wizard.module.js" />
+    <Content Include="spexplorerjs\src\components\sp\sp.wizard.modaltemplate.html" />
+    <Content Include="spexplorerjs\src\components\sp\sp.wizard.template.html" />
     <Content Include="spexplorerjs\src\components\sp\spPage.aspx" />
     <Content Include="spexplorerjs\src\components\sp\spPage16.aspx" />
     <Content Include="spexplorerjs\src\components\sp\treelight.html">
@@ -399,6 +410,7 @@
     </Content>
     <Content Include="spexplorerjs\src\components\sp\user.editor.js" />
     <Content Include="spexplorerjs\src\components\widget.base.js" />
+    <Content Include="spexplorerjs\src\pages\index\app1.css" />
     <Content Include="spexplorerjs\src\scripts\packer.js" />
     <Content Include="spexplorerjs\src\components\sp\sp.base.js" />
     <Content Include="spexplorerjs\src\components\sp\sp.web.js" />
@@ -491,7 +503,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>24703</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
