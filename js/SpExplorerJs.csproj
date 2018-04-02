@@ -83,9 +83,22 @@
     <Content Include="spexplorerjs\packer.js">
       <DependentUpon>scripts.js</DependentUpon>
     </Content>
+    <Content Include="spexplorerjs\public\app1.html" />
+    <Content Include="spexplorerjs\public\app1.js" />
     <Content Include="spexplorerjs\public\components\datatables\datatables.js" />
     <Content Include="spexplorerjs\public\components\datatables\datatables.min.js" />
+    <Content Include="spexplorerjs\public\components\datatables\datatables.min.js.map" />
     <Content Include="spexplorerjs\public\components\datatables\index.html" />
+    <Content Include="spexplorerjs\public\components\datatables\template.html" />
+    <Content Include="spexplorerjs\public\components\datatables\template.widget.cdn.html" />
+    <Content Include="spexplorerjs\public\components\datatables\template.widget.inline.html" />
+    <Content Include="spexplorerjs\public\components\loader\index.html" />
+    <Content Include="spexplorerjs\public\components\loader\loader.js" />
+    <Content Include="spexplorerjs\public\components\loader\loader.min.js" />
+    <Content Include="spexplorerjs\public\components\loader\loader.min.js.map" />
+    <Content Include="spexplorerjs\public\components\logger\index.html" />
+    <Content Include="spexplorerjs\public\components\logger\logger.js" />
+    <Content Include="spexplorerjs\public\components\logger\logger.min.js" />
     <Content Include="spexplorerjs\public\components\logger\logger.min.js.map" />
     <Content Include="spexplorerjs\public\components\logger\test.html" />
     <Content Include="spexplorerjs\public\components\mirrors\jseditor.html">
@@ -134,12 +147,19 @@
     <Content Include="spexplorerjs\public\components\sp\customaction.editor.dev.aspx">
       <DependentUpon>customaction.editor.js</DependentUpon>
     </Content>
+    <Content Include="spexplorerjs\public\components\sp\customaction.editor.js" />
     <Content Include="spexplorerjs\public\components\sp\customaction.editor.local.aspx">
       <DependentUpon>customaction.editor.js</DependentUpon>
     </Content>
     <Content Include="spexplorerjs\public\components\sp\customaction.selector.aspx">
       <DependentUpon>customaction.selector.js</DependentUpon>
     </Content>
+    <Content Include="spexplorerjs\public\components\sp\customaction.selector.js" />
+    <Content Include="spexplorerjs\public\components\sp\field.selector.aspx">
+      <DependentUpon>field.selector.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\field.selector.js" />
+    <Content Include="spexplorerjs\public\components\sp\index.html" />
     <Content Include="spexplorerjs\public\components\sp\list.editor.aspx">
       <DependentUpon>list.editor.js</DependentUpon>
     </Content>
@@ -151,10 +171,18 @@
       <DependentUpon>list.editor.js</DependentUpon>
     </Content>
     <Content Include="spexplorerjs\public\components\sp\sp.explorer.aspx" />
+    <Content Include="spexplorerjs\public\components\sp\sp.explorer.dev.aspx" />
     <Content Include="spexplorerjs\public\components\sp\sp.explorer.js" />
     <Content Include="spexplorerjs\public\components\sp\sp.explorer.local.aspx">
       <DependentUpon>sp.explorer.aspx</DependentUpon>
     </Content>
+    <Content Include="spexplorerjs\public\components\sp\sp.web.html" />
+    <Content Include="spexplorerjs\public\components\sp\sp.web.js" />
+    <Content Include="spexplorerjs\public\components\sp\sp.web.min.js" />
+    <Content Include="spexplorerjs\public\components\sp\sp.web.min.js.map" />
+    <Content Include="spexplorerjs\public\components\sp\sp.web.widget.cdn.html" />
+    <Content Include="spexplorerjs\public\components\sp\sp.web.widget.html" />
+    <Content Include="spexplorerjs\public\components\sp\sp.web.widget.inline.html" />
     <Content Include="spexplorerjs\public\components\sp\sp.wizard.aspx" />
     <Content Include="spexplorerjs\public\components\sp\sp.wizard.dev.aspx" />
     <Content Include="spexplorerjs\public\components\sp\sp.wizard.js" />
@@ -162,21 +190,6 @@
     <Content Include="spexplorerjs\public\components\sp\treelight.aspx">
       <DependentUpon>treelight.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\public\components\sp\treelight.cdn.aspx">
-      <DependentUpon>treelight.js</DependentUpon>
-    </Content>
-    <Content Include="spexplorerjs\public\components\sp\ui.perms.aspx" />
-    <Content Include="spexplorerjs\public\components\sp\customaction.editor.js" />
-    <Content Include="spexplorerjs\public\components\sp\customaction.selector.js" />
-    <Content Include="spexplorerjs\public\components\sp\field.selector.aspx">
-      <DependentUpon>field.selector.js</DependentUpon>
-    </Content>
-    <Content Include="spexplorerjs\public\components\sp\field.selector.js" />
-    <Content Include="spexplorerjs\public\components\sp\index.html" />
-    <Content Include="spexplorerjs\public\components\sp\sp.web.html" />
-    <Content Include="spexplorerjs\public\components\sp\sp.web.js" />
-    <Content Include="spexplorerjs\public\components\sp\sp.web.min.js" />
-    <Content Include="spexplorerjs\public\components\sp\sp.web.widget.html" />
     <Content Include="spexplorerjs\public\components\sp\treelight.html">
       <DependentUpon>treelight.js</DependentUpon>
     </Content>
@@ -190,44 +203,73 @@
     <Content Include="spexplorerjs\public\components\sp\treelight.widget.inline.html">
       <DependentUpon>treelight.html</DependentUpon>
     </Content>
+    <Content Include="spexplorerjs\public\components\sp\ui.perms.aspx" />
     <Content Include="spexplorerjs\public\components\sp\ui.perms.js" />
+    <Content Include="spexplorerjs\public\components\string\index.html" />
     <Content Include="spexplorerjs\public\components\string\string.js" />
     <Content Include="spexplorerjs\public\components\string\string.min.js" />
+    <Content Include="spexplorerjs\public\components\string\string.min.js.map" />
     <Content Include="spexplorerjs\public\components\string\test.html" />
+    <Content Include="spexplorerjs\public\pages\index\index.html" />
     <Content Include="spexplorerjs\public\pages\index\index.js" />
     <Content Include="spexplorerjs\public\pages\index\index.min.js" />
+    <Content Include="spexplorerjs\public\pages\index\index.min.js.map" />
     <Content Include="spexplorerjs\public\pages\index\sample.html" />
+    <Content Include="spexplorerjs\public\refs\bootstrap.min.js" />
+    <Content Include="spexplorerjs\public\refs\jquery.min.js" />
+    <Content Include="spexplorerjs\public\stylesheets\style.css" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap-theme.css" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap-theme.css.map" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap-theme.min.css" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap-theme.min.css.map" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap.css" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap.css.map" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap.min.css" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap.min.css.map" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\spexp.css">
       <DependentUpon>spexp.less</DependentUpon>
     </Content>
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\spexp.less" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\spexp.min.css">
       <DependentUpon>spexp.css</DependentUpon>
     </Content>
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\js\bootstrap.js" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\js\bootstrap.min.js" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\js\npm.js" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap-grid.css.map" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap-reboot.css.map" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap.css.map" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap.min.css.map" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\css\spexpbootstrap.css" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\spexpbootstrap.less" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\css\spexpjs.css">
       <DependentUpon>spexpjs.scss</DependentUpon>
     </Content>
     <Content Include="spexplorerjs\public\vendor\bootstrap\css\spexpjs.min.css">
       <DependentUpon>spexpjs.css</DependentUpon>
     </Content>
+    <Content Include="spexplorerjs\public\vendor\bootstrap\css\spexpjs.scss" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\js\bootstrap.bundle.js.map" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\js\bootstrap.js.map" />
     <Content Include="spexplorerjs\public\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="spexplorerjs\public\vendor\bootstrap\js\bootstrap.min.js.map" />
     <Content Include="spexplorerjs\public\vendor\select2\css\select2.css" />
     <Content Include="spexplorerjs\public\vendor\select2\css\select2.min.css" />
     <Content Include="spexplorerjs\public\vendor\select2\js\i18n\af.js" />
@@ -429,33 +471,7 @@
     <Content Include="spexplorerjs\LICENSE" />
     <Content Include="spexplorerjs\package.json" />
     <Content Include="spexplorerjs\README.md" />
-    <Content Include="spexplorerjs\public\components\loader\loader.min.js.map" />
-    <Content Include="spexplorerjs\public\pages\index\index.min.js.map" />
-    <Content Include="spexplorerjs\public\components\string\string.min.js.map" />
-    <Content Include="spexplorerjs\public\components\datatables\datatables.min.js.map" />
-    <Content Include="spexplorerjs\public\components\sp\sp.web.min.js.map" />
     <Content Include="spexplorerjs\src\components\sp\list.editor.js" />
-    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap-grid.css.map" />
-    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
-    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap-reboot.css.map" />
-    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
-    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap.css.map" />
-    <Content Include="spexplorerjs\public\vendor\bootstrap\css\bootstrap.min.css.map" />
-    <Content Include="spexplorerjs\public\vendor\bootstrap\js\bootstrap.bundle.js.map" />
-    <Content Include="spexplorerjs\public\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
-    <Content Include="spexplorerjs\public\vendor\bootstrap\js\bootstrap.js.map" />
-    <Content Include="spexplorerjs\public\vendor\bootstrap\js\bootstrap.min.js.map" />
-    <Content Include="spexplorerjs\public\vendor\bootstrap\css\spexpbootstrap.less" />
-    <Content Include="spexplorerjs\public\vendor\bootstrap\css\spexpjs.scss" />
-    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap-theme.css.map" />
-    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap-theme.min.css.map" />
-    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap.css.map" />
-    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\bootstrap.min.css.map" />
-    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="spexplorerjs\public\vendor\bootstrap\3.3.7\css\spexp.less" />
     <Content Include="spexplorerjs\src\components\sp\field.selector.js" />
     <Content Include="spexplorerjs\views\components.ejs" />
     <None Include="packages.config" />
@@ -467,13 +483,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="spexplorerjs\public\components\loader\loader.js" />
-    <Content Include="spexplorerjs\public\components\loader\loader.min.js" />
-    <Content Include="spexplorerjs\public\components\logger\logger.js" />
-    <Content Include="spexplorerjs\public\components\logger\logger.min.js" />
-    <Content Include="spexplorerjs\public\refs\bootstrap.min.js" />
-    <Content Include="spexplorerjs\public\refs\jquery.min.js" />
-    <Content Include="spexplorerjs\public\stylesheets\style.css" />
     <Content Include="spexplorerjs\routes\index.js" />
     <Content Include="spexplorerjs\routes\users.js" />
     <Content Include="spexplorerjs\src\components\loader\loader.js" />
