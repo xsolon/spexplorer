@@ -210,11 +210,8 @@
     <Content Include="spexplorerjs\public\components\string\string.min.js" />
     <Content Include="spexplorerjs\public\components\string\string.min.js.map" />
     <Content Include="spexplorerjs\public\components\string\test.html" />
-    <Content Include="spexplorerjs\public\pages\index\index.html" />
-    <Content Include="spexplorerjs\public\pages\index\index.js" />
-    <Content Include="spexplorerjs\public\pages\index\index.min.js" />
-    <Content Include="spexplorerjs\public\pages\index\index.min.js.map" />
-    <Content Include="spexplorerjs\public\pages\index\sample.html" />
+    <Content Include="spexplorerjs\public\pages\tests\sample.html" />
+    <Content Include="spexplorerjs\public\pages\tests\index.js" />
     <Content Include="spexplorerjs\public\refs\bootstrap.min.js" />
     <Content Include="spexplorerjs\public\refs\jquery.min.js" />
     <Content Include="spexplorerjs\public\stylesheets\style.css" />
@@ -452,7 +449,7 @@
     </Content>
     <Content Include="spexplorerjs\src\components\sp\user.editor.js" />
     <Content Include="spexplorerjs\src\components\widget.base.js" />
-    <Content Include="spexplorerjs\src\pages\index\app1.css" />
+    <Content Include="spexplorerjs\src\pages\tests\app1.css" />
     <Content Include="spexplorerjs\src\scripts\packer.js" />
     <Content Include="spexplorerjs\src\components\sp\sp.base.js" />
     <Content Include="spexplorerjs\src\components\sp\sp.web.js" />
@@ -460,7 +457,7 @@
     <Content Include="spexplorerjs\src\pages\app1\app1.css" />
     <Content Include="spexplorerjs\src\pages\app1\app1.html" />
     <Content Include="spexplorerjs\src\pages\app1\app1.js" />
-    <Content Include="spexplorerjs\src\pages\index\index.js" />
+    <Content Include="spexplorerjs\src\pages\tests\index.js" />
     <Content Include="spexplorerjs\src\scripts\mytransforms.js" />
     <Content Include="spexplorerjs\src\scripts\widgettransforms.js" />
     <Content Include="spexplorerjs\uglify.js">
