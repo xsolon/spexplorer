@@ -158,7 +158,13 @@
     <Content Include="spexplorerjs\public\components\sp\field.selector.aspx">
       <DependentUpon>field.selector.js</DependentUpon>
     </Content>
+    <Content Include="spexplorerjs\public\components\sp\field.selector.dev.aspx">
+      <DependentUpon>field.selector.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\public\components\sp\field.selector.js" />
+    <Content Include="spexplorerjs\public\components\sp\field.selector.local.aspx">
+      <DependentUpon>field.selector.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\public\components\sp\index.html" />
     <Content Include="spexplorerjs\public\components\sp\list.editor.aspx">
       <DependentUpon>list.editor.js</DependentUpon>
@@ -401,6 +407,7 @@
     <Content Include="spexplorerjs\src\components\sp\field.selector.fieldtemplate.html">
       <DependentUpon>field.selector.js</DependentUpon>
     </Content>
+    <Content Include="spexplorerjs\src\components\sp\field.selector.module.js" />
     <Content Include="spexplorerjs\src\components\sp\field.selector.template.html">
       <DependentUpon>field.selector.js</DependentUpon>
     </Content>
