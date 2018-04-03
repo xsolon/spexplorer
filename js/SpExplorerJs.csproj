@@ -467,6 +467,7 @@
     <Content Include="spexplorerjs\src\pages\tests\index.js" />
     <Content Include="spexplorerjs\src\scripts\mytransforms.js" />
     <Content Include="spexplorerjs\src\scripts\widgettransforms.js" />
+    <Content Include="spexplorerjs\src\snippets\sp.field.jslink.js" />
     <Content Include="spexplorerjs\uglify.js">
       <DependentUpon>scripts.js</DependentUpon>
     </Content>
