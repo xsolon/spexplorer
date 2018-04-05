@@ -69,6 +69,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
@@ -189,10 +190,16 @@
     <Content Include="spexplorerjs\public\components\sp\sp.web.widget.cdn.html" />
     <Content Include="spexplorerjs\public\components\sp\sp.web.widget.html" />
     <Content Include="spexplorerjs\public\components\sp\sp.web.widget.inline.html" />
-    <Content Include="spexplorerjs\public\components\sp\sp.wizard.aspx" />
-    <Content Include="spexplorerjs\public\components\sp\sp.wizard.dev.aspx" />
+    <Content Include="spexplorerjs\public\components\sp\sp.wizard.aspx">
+      <DependentUpon>sp.wizard.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\sp.wizard.dev.aspx">
+      <DependentUpon>sp.wizard.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\public\components\sp\sp.wizard.js" />
-    <Content Include="spexplorerjs\public\components\sp\sp.wizard.local.aspx" />
+    <Content Include="spexplorerjs\public\components\sp\sp.wizard.local.aspx">
+      <DependentUpon>sp.wizard.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\public\components\sp\treelight.aspx">
       <DependentUpon>treelight.js</DependentUpon>
     </Content>
@@ -344,6 +351,9 @@
     <Content Include="spexplorerjs\src\components\datatables\template.html" />
     <Content Include="spexplorerjs\src\components\loader\loaderspwizard.js" />
     <Content Include="spexplorerjs\src\components\loader\wizard.js" />
+    <Content Include="spexplorerjs\src\components\loader\wizard.min.js">
+      <DependentUpon>wizard.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\src\components\mirrors\jseditor.html">
       <DependentUpon>jseditor.js</DependentUpon>
     </Content>
@@ -407,7 +417,9 @@
     <Content Include="spexplorerjs\src\components\sp\field.selector.fieldtemplate.html">
       <DependentUpon>field.selector.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\field.selector.module.js" />
+    <Content Include="spexplorerjs\src\components\sp\field.selector.module.js">
+      <DependentUpon>field.selector.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\src\components\sp\field.selector.template.html">
       <DependentUpon>field.selector.js</DependentUpon>
     </Content>
@@ -432,9 +444,15 @@
       <DependentUpon>sp.web.js</DependentUpon>
     </Content>
     <Content Include="spexplorerjs\src\components\sp\sp.wizard.js" />
-    <Content Include="spexplorerjs\src\components\sp\sp.wizard.module.js" />
-    <Content Include="spexplorerjs\src\components\sp\sp.wizard.modaltemplate.html" />
-    <Content Include="spexplorerjs\src\components\sp\sp.wizard.template.html" />
+    <Content Include="spexplorerjs\src\components\sp\sp.wizard.modaltemplate.html">
+      <DependentUpon>sp.wizard.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\sp.wizard.module.js">
+      <DependentUpon>sp.wizard.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\sp.wizard.template.html">
+      <DependentUpon>sp.wizard.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\src\components\sp\spPage.aspx" />
     <Content Include="spexplorerjs\src\components\sp\spPage16.aspx" />
     <Content Include="spexplorerjs\src\components\sp\treelight.html">
@@ -457,6 +475,10 @@
     <Content Include="spexplorerjs\src\components\sp\user.editor.js" />
     <Content Include="spexplorerjs\src\components\widget.base.js" />
     <Content Include="spexplorerjs\src\pages\tests\app1.css" />
+    <Content Include="spexplorerjs\src\pages\tests\datatable1.js" />
+    <Content Include="spexplorerjs\src\pages\tests\datatable1.template.html">
+      <DependentUpon>datatable1.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\src\scripts\packer.js" />
     <Content Include="spexplorerjs\src\components\sp\sp.base.js" />
     <Content Include="spexplorerjs\src\components\sp\sp.web.js" />
@@ -504,7 +526,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spexplorerjs\public\images\" />
-    <Folder Include="spexplorerjs\public\javascripts\" />
+    <Folder Include="spexplorerjs\public\snippets\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
