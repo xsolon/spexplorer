@@ -99,13 +99,23 @@
     <Content Include="spexplorerjs\public\components\loader\loader.min.js.map" />
     <Content Include="spexplorerjs\public\components\logger\index.html" />
     <Content Include="spexplorerjs\public\components\logger\logger.js" />
-    <Content Include="spexplorerjs\public\components\logger\logger.min.js" />
-    <Content Include="spexplorerjs\public\components\logger\logger.min.js.map" />
+    <Content Include="spexplorerjs\public\components\logger\logger.local.js">
+      <DependentUpon>logger.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\logger\logger.min.js">
+      <DependentUpon>logger.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\logger\logger.min.js.map">
+      <DependentUpon>logger.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\public\components\logger\test.html" />
     <Content Include="spexplorerjs\public\components\mirrors\jseditor.html">
       <DependentUpon>jseditor.js</DependentUpon>
     </Content>
     <Content Include="spexplorerjs\public\components\mirrors\jseditor.js" />
+    <Content Include="spexplorerjs\public\components\mirrors\jseditor.local.js">
+      <DependentUpon>jseditor.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\public\components\mirrors\jseditor.widget.cdn.html">
       <DependentUpon>jseditor.js</DependentUpon>
     </Content>
@@ -116,6 +126,9 @@
       <DependentUpon>jsmirror.js</DependentUpon>
     </Content>
     <Content Include="spexplorerjs\public\components\mirrors\jsmirror.js" />
+    <Content Include="spexplorerjs\public\components\mirrors\jsmirror.local.js">
+      <DependentUpon>jsmirror.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\public\components\mirrors\jsmirror.widget.cdn.html">
       <DependentUpon>jsmirror.js</DependentUpon>
     </Content>
@@ -126,6 +139,9 @@
       <DependentUpon>xmleditor.js</DependentUpon>
     </Content>
     <Content Include="spexplorerjs\public\components\mirrors\xmleditor.js" />
+    <Content Include="spexplorerjs\public\components\mirrors\xmleditor.local.js">
+      <DependentUpon>xmleditor.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\public\components\mirrors\xmleditor.widget.cdn.html">
       <DependentUpon>xmleditor.html</DependentUpon>
     </Content>
@@ -136,6 +152,9 @@
       <DependentUpon>xmlmirror.js</DependentUpon>
     </Content>
     <Content Include="spexplorerjs\public\components\mirrors\xmlmirror.js" />
+    <Content Include="spexplorerjs\public\components\mirrors\xmlmirror.local.js">
+      <DependentUpon>xmlmirror.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\public\components\mirrors\xmlmirror.widget.cdn.html">
       <DependentUpon>xmlmirror.html</DependentUpon>
     </Content>
@@ -152,6 +171,9 @@
     <Content Include="spexplorerjs\public\components\sp\customaction.editor.local.aspx">
       <DependentUpon>customaction.editor.js</DependentUpon>
     </Content>
+    <Content Include="spexplorerjs\public\components\sp\customaction.editor.local.js">
+      <DependentUpon>customaction.editor.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\public\components\sp\customaction.selector.aspx">
       <DependentUpon>customaction.selector.js</DependentUpon>
     </Content>
@@ -166,6 +188,9 @@
     <Content Include="spexplorerjs\public\components\sp\field.selector.local.aspx">
       <DependentUpon>field.selector.js</DependentUpon>
     </Content>
+    <Content Include="spexplorerjs\public\components\sp\field.selector.local.js">
+      <DependentUpon>field.selector.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\public\components\sp\index.html" />
     <Content Include="spexplorerjs\public\components\sp\list.editor.aspx">
       <DependentUpon>list.editor.js</DependentUpon>
@@ -177,19 +202,41 @@
     <Content Include="spexplorerjs\public\components\sp\list.editor.local.aspx">
       <DependentUpon>list.editor.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\public\components\sp\sp.explorer.aspx" />
-    <Content Include="spexplorerjs\public\components\sp\sp.explorer.dev.aspx" />
+    <Content Include="spexplorerjs\public\components\sp\list.editor.local.js">
+      <DependentUpon>list.editor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\sp.explorer.aspx">
+      <DependentUpon>sp.explorer.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\sp.explorer.dev.aspx">
+      <DependentUpon>sp.explorer.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\public\components\sp\sp.explorer.js" />
     <Content Include="spexplorerjs\public\components\sp\sp.explorer.local.aspx">
       <DependentUpon>sp.explorer.aspx</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\public\components\sp\sp.web.html" />
+    <Content Include="spexplorerjs\public\components\sp\sp.web.aspx">
+      <DependentUpon>sp.web.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\sp.web.dev.aspx">
+      <DependentUpon>sp.web.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\sp.web.html">
+      <DependentUpon>sp.web.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\public\components\sp\sp.web.js" />
-    <Content Include="spexplorerjs\public\components\sp\sp.web.min.js" />
-    <Content Include="spexplorerjs\public\components\sp\sp.web.min.js.map" />
-    <Content Include="spexplorerjs\public\components\sp\sp.web.widget.cdn.html" />
-    <Content Include="spexplorerjs\public\components\sp\sp.web.widget.html" />
-    <Content Include="spexplorerjs\public\components\sp\sp.web.widget.inline.html" />
+    <Content Include="spexplorerjs\public\components\sp\sp.web.local.aspx">
+      <DependentUpon>sp.web.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\sp.web.local.js">
+      <DependentUpon>sp.web.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\sp.web.min.js">
+      <DependentUpon>sp.web.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\sp.web.min.js.map">
+      <DependentUpon>sp.web.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\public\components\sp\sp.wizard.aspx">
       <DependentUpon>sp.wizard.js</DependentUpon>
     </Content>
@@ -198,9 +245,15 @@
     </Content>
     <Content Include="spexplorerjs\public\components\sp\sp.wizard.js" />
     <Content Include="spexplorerjs\public\components\sp\sp.wizard.local.aspx">
+      <DependentUpon>sp.wizard.local.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\sp.wizard.local.js">
       <DependentUpon>sp.wizard.js</DependentUpon>
     </Content>
     <Content Include="spexplorerjs\public\components\sp\treelight.aspx">
+      <DependentUpon>treelight.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\treelight.dev.aspx">
       <DependentUpon>treelight.js</DependentUpon>
     </Content>
     <Content Include="spexplorerjs\public\components\sp\treelight.html">
@@ -210,17 +263,30 @@
     <Content Include="spexplorerjs\public\components\sp\treelight.local.aspx">
       <DependentUpon>treelight.js</DependentUpon>
     </Content>
+    <Content Include="spexplorerjs\public\components\sp\treelight.local.js">
+      <DependentUpon>treelight.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\public\components\sp\treelight.widget.cdn.html">
       <DependentUpon>treelight.html</DependentUpon>
     </Content>
     <Content Include="spexplorerjs\public\components\sp\treelight.widget.inline.html">
       <DependentUpon>treelight.html</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\public\components\sp\ui.perms.aspx" />
+    <Content Include="spexplorerjs\public\components\sp\ui.perms.aspx">
+      <DependentUpon>ui.perms.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\public\components\sp\ui.perms.js" />
+    <Content Include="spexplorerjs\public\components\sp\ui.perms.local.js">
+      <DependentUpon>ui.perms.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\public\components\string\index.html" />
     <Content Include="spexplorerjs\public\components\string\string.js" />
-    <Content Include="spexplorerjs\public\components\string\string.min.js" />
+    <Content Include="spexplorerjs\public\components\string\string.local.js">
+      <DependentUpon>string.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\string\string.min.js">
+      <DependentUpon>string.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\public\components\string\string.min.js.map" />
     <Content Include="spexplorerjs\public\components\string\test.html" />
     <Content Include="spexplorerjs\public\pages\tests\sample.html" />
