@@ -217,6 +217,8 @@
     <Content Include="spexplorerjs\public\components\sp\sp.explorer.local.aspx">
       <DependentUpon>sp.explorer.aspx</DependentUpon>
     </Content>
+    <Content Include="spexplorerjs\public\components\sp\sp.list.js" />
+    <Content Include="spexplorerjs\public\components\sp\sp.list.local.js" />
     <Content Include="spexplorerjs\public\components\sp\sp.web.aspx">
       <DependentUpon>sp.web.js</DependentUpon>
     </Content>
@@ -252,6 +254,7 @@
     <Content Include="spexplorerjs\public\components\sp\sp.wizard.local.js">
       <DependentUpon>sp.wizard.js</DependentUpon>
     </Content>
+    <Content Include="spexplorerjs\public\components\sp\sp.list.local.aspx" />
     <Content Include="spexplorerjs\public\components\sp\spFileReport.aspx" />
     <Content Include="spexplorerjs\public\components\sp\spFileReport.dev.aspx" />
     <Content Include="spexplorerjs\public\components\sp\spFileReport.js" />
@@ -509,6 +512,7 @@
     <Content Include="spexplorerjs\src\components\sp\sp.explorer.template.html">
       <DependentUpon>sp.explorer.js</DependentUpon>
     </Content>
+    <Content Include="spexplorerjs\src\components\sp\sp.folderapi.js" />
     <Content Include="spexplorerjs\src\components\sp\sp.list.js" />
     <Content Include="spexplorerjs\src\components\sp\sp.web.html">
       <DependentUpon>sp.web.js</DependentUpon>
@@ -621,7 +625,6 @@
     <Folder Include="spexplorerjs\public\snippets\" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="spexplorerjs\src\components\mirrors\file1.ts" />
     <TypeScriptCompile Include="spexplorerjs\src\components\sp\sp.list.ts" />
     <TypeScriptCompile Include="spexplorerjs\src\typings\microsoft-ajax\index.d.ts" />
     <TypeScriptCompile Include="spexplorerjs\src\typings\node\index.d.ts" />
