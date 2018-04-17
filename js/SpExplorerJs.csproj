@@ -299,6 +299,7 @@
     </Content>
     <Content Include="spexplorerjs\public\components\string\string.min.js.map" />
     <Content Include="spexplorerjs\public\components\string\test.html" />
+    <Content Include="spexplorerjs\public\pages\tests\diff.html" />
     <Content Include="spexplorerjs\public\pages\tests\sample.html" />
     <Content Include="spexplorerjs\public\pages\tests\index.js" />
     <Content Include="spexplorerjs\public\refs\bootstrap.min.js" />
