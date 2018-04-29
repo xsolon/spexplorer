@@ -99,6 +99,7 @@
     <Content Include="spexplorerjs\public\components\loader\loader.js" />
     <Content Include="spexplorerjs\public\components\loader\loader.min.js" />
     <Content Include="spexplorerjs\public\components\loader\loader.min.js.map" />
+    <Content Include="spexplorerjs\public\components\logger\index.min.html" />
     <Content Include="spexplorerjs\public\components\logger\index.html" />
     <Content Include="spexplorerjs\public\components\logger\logger.js" />
     <Content Include="spexplorerjs\public\components\logger\logger.local.js">
@@ -163,6 +164,20 @@
     <Content Include="spexplorerjs\public\components\mirrors\xmlmirror.widget.inline.html">
       <DependentUpon>xmlmirror.html</DependentUpon>
     </Content>
+    <Content Include="spexplorerjs\public\components\sp\api\api.js" />
+    <Content Include="spexplorerjs\public\components\sp\api\api.local.js">
+      <DependentUpon>api.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\api\tester.aspx" />
+    <Content Include="spexplorerjs\public\components\sp\api\tester.dev.aspx" />
+    <Content Include="spexplorerjs\public\components\sp\api\tester.js" />
+    <Content Include="spexplorerjs\public\components\sp\api\tester.local.aspx" />
+    <Content Include="spexplorerjs\public\components\sp\api\tester.local.js">
+      <DependentUpon>tester.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\api\tester.min.js">
+      <DependentUpon>tester.js</DependentUpon>
+    </Content>
     <Content Include="spexplorerjs\public\components\sp\customaction.editor.aspx">
       <DependentUpon>customaction.editor.js</DependentUpon>
     </Content>
@@ -206,6 +221,19 @@
     </Content>
     <Content Include="spexplorerjs\public\components\sp\list.editor.local.js">
       <DependentUpon>list.editor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\masterpageselector.aspx">
+      <DependentUpon>masterpageselector.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\masterpageselector.dev.aspx">
+      <DependentUpon>masterpageselector.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\masterpageselector.js" />
+    <Content Include="spexplorerjs\public\components\sp\masterpageselector.local.aspx">
+      <DependentUpon>masterpageselector.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\public\components\sp\masterpageselector.local.js">
+      <DependentUpon>masterpageselector.js</DependentUpon>
     </Content>
     <Content Include="spexplorerjs\public\components\sp\sp.explorer.aspx">
       <DependentUpon>sp.explorer.js</DependentUpon>
@@ -289,6 +317,7 @@
     <Content Include="spexplorerjs\public\components\sp\ui.perms.local.js">
       <DependentUpon>ui.perms.js</DependentUpon>
     </Content>
+    <Content Include="spexplorerjs\public\components\string\index.min.html" />
     <Content Include="spexplorerjs\public\components\string\index.html" />
     <Content Include="spexplorerjs\public\components\string\string.js" />
     <Content Include="spexplorerjs\public\components\string\string.local.js">
@@ -468,43 +497,58 @@
     <Content Include="spexplorerjs\src\components\mirrors\xmlmirror.template.html">
       <DependentUpon>xmlmirror.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\customaction.dal.js">
+    <Content Include="spexplorerjs\src\components\sp\api\api.js" />
+    <Content Include="spexplorerjs\src\components\sp\api\tester.js" />
+    <Content Include="spexplorerjs\src\components\sp\api\tester.module.js">
+      <DependentUpon>tester.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\api\tester.template.html">
+      <DependentUpon>tester.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\widgets\customaction.dal.js">
       <DependentUpon>customaction.editor.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\customaction.editor.html">
+    <Content Include="spexplorerjs\src\components\sp\widgets\customaction.editor.html">
       <DependentUpon>customaction.editor.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\customaction.editor.js" />
-    <Content Include="spexplorerjs\src\components\sp\customaction.editor.module.js">
+    <Content Include="spexplorerjs\src\components\sp\widgets\customaction.editor.js" />
+    <Content Include="spexplorerjs\src\components\sp\widgets\customaction.editor.module.js">
       <DependentUpon>customaction.editor.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\customaction.editor.template.html">
+    <Content Include="spexplorerjs\src\components\sp\widgets\customaction.editor.template.html">
       <DependentUpon>customaction.editor.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\customaction.selector.html">
+    <Content Include="spexplorerjs\src\components\sp\widgets\customaction.selector.html">
       <DependentUpon>customaction.selector.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\customaction.selector.itemtemplate.html">
+    <Content Include="spexplorerjs\src\components\sp\widgets\customaction.selector.itemtemplate.html">
       <DependentUpon>customaction.selector.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\customaction.selector.js" />
-    <Content Include="spexplorerjs\src\components\sp\customaction.selector.template.html">
+    <Content Include="spexplorerjs\src\components\sp\widgets\customaction.selector.js" />
+    <Content Include="spexplorerjs\src\components\sp\widgets\customaction.selector.template.html">
       <DependentUpon>customaction.selector.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\field.selector.fieldtemplate.html">
+    <Content Include="spexplorerjs\src\components\sp\widgets\field.selector.fieldtemplate.html">
       <DependentUpon>field.selector.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\field.selector.module.js">
+    <Content Include="spexplorerjs\src\components\sp\widgets\field.selector.module.js">
       <DependentUpon>field.selector.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\field.selector.template.html">
+    <Content Include="spexplorerjs\src\components\sp\widgets\field.selector.template.html">
       <DependentUpon>field.selector.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\list.editor.module.js">
+    <Content Include="spexplorerjs\src\components\sp\widgets\list.editor.module.js">
       <DependentUpon>list.editor.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\list.editor.template.html">
+    <Content Include="spexplorerjs\src\components\sp\widgets\list.editor.template.html">
       <DependentUpon>list.editor.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\widgets\masterpageselector.js" />
+    <Content Include="spexplorerjs\src\components\sp\widgets\masterpageselector.module.js">
+      <DependentUpon>masterpageselector.js</DependentUpon>
+    </Content>
+    <Content Include="spexplorerjs\src\components\sp\widgets\masterpageselector.template.html">
+      <DependentUpon>masterpageselector.js</DependentUpon>
     </Content>
     <Content Include="spexplorerjs\src\components\sp\sp.explorer.js" />
     <Content Include="spexplorerjs\src\components\sp\sp.explorer.module.js">
@@ -513,50 +557,52 @@
     <Content Include="spexplorerjs\src\components\sp\sp.explorer.template.html">
       <DependentUpon>sp.explorer.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\sp.folderapi.js" />
-    <Content Include="spexplorerjs\src\components\sp\sp.list.js" />
-    <Content Include="spexplorerjs\src\components\sp\sp.web.html">
+    <Content Include="spexplorerjs\src\components\sp\api\sp.folderapi.js" />
+    <Content Include="spexplorerjs\src\components\sp\api\sp.list.js" />
+    <Content Include="spexplorerjs\src\components\sp\api\sp.web.html">
       <DependentUpon>sp.web.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\sp.web.module.js">
+    <Content Include="spexplorerjs\src\components\sp\api\sp.web.module.js">
       <DependentUpon>sp.web.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\sp.wizard.js" />
-    <Content Include="spexplorerjs\src\components\sp\sp.wizard.modaltemplate.html">
+    <Content Include="spexplorerjs\src\components\sp\widgets\sp.wizard.js" />
+    <Content Include="spexplorerjs\src\components\sp\widgets\sp.wizard.modaltemplate.html">
       <DependentUpon>sp.wizard.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\sp.wizard.module.js">
+    <Content Include="spexplorerjs\src\components\sp\widgets\sp.wizard.module.js">
       <DependentUpon>sp.wizard.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\sp.wizard.template.html">
+    <Content Include="spexplorerjs\src\components\sp\widgets\sp.wizard.template.html">
       <DependentUpon>sp.wizard.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\spFileReport.html">
+    <Content Include="spexplorerjs\src\components\sp\widgets\spFileReport.html">
       <DependentUpon>spFileReport.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\spFileReport.module.js">
+    <Content Include="spexplorerjs\src\components\sp\widgets\spFileReport.module.js">
       <DependentUpon>spFileReport.js</DependentUpon>
     </Content>
     <Content Include="spexplorerjs\src\components\sp\spPage.aspx" />
     <Content Include="spexplorerjs\src\components\sp\spPage16.aspx" />
-    <Content Include="spexplorerjs\src\components\sp\treelight.html">
+    <Content Include="spexplorerjs\src\components\sp\widgets\treelight.html">
       <DependentUpon>treelight.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\treelight.js" />
-    <Content Include="spexplorerjs\src\components\sp\treelight.module.js">
+    <Content Include="spexplorerjs\src\components\sp\widgets\treelight.js" />
+    <Content Include="spexplorerjs\src\components\sp\widgets\treelight.module.js">
       <DependentUpon>treelight.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\treelight.template.html">
+    <Content Include="spexplorerjs\src\components\sp\widgets\treelight.template.html">
       <DependentUpon>treelight.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\ui.perms.html">
+    <Content Include="spexplorerjs\src\components\sp\widgets\ui.perms.html">
       <DependentUpon>ui.perms.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\ui.perms.js" />
-    <Content Include="spexplorerjs\src\components\sp\ui.perms.template.html">
+    <Content Include="spexplorerjs\src\components\sp\widgets\ui.perms.js" />
+    <Content Include="spexplorerjs\src\components\sp\widgets\ui.perms.template.html">
       <DependentUpon>ui.perms.js</DependentUpon>
     </Content>
-    <Content Include="spexplorerjs\src\components\sp\user.editor.js" />
+    <Content Include="spexplorerjs\src\components\sp\widgets\user.editor.js" />
+    <Content Include="spexplorerjs\src\components\string\funcs.js" />
+    <Content Include="spexplorerjs\src\components\string\xhr.js" />
     <Content Include="spexplorerjs\src\components\widget.base.js" />
     <Content Include="spexplorerjs\src\pages\caml.js" />
     <Content Include="spexplorerjs\src\pages\tests\app1.css" />
@@ -565,8 +611,8 @@
       <DependentUpon>datatable1.js</DependentUpon>
     </Content>
     <Content Include="spexplorerjs\src\scripts\packer.js" />
-    <Content Include="spexplorerjs\src\components\sp\sp.base.js" />
-    <Content Include="spexplorerjs\src\components\sp\sp.web.js" />
+    <Content Include="spexplorerjs\src\components\sp\api\sp.base.js" />
+    <Content Include="spexplorerjs\src\components\sp\api\sp.web.js" />
     <Content Include="spexplorerjs\src\components\string\string.js" />
     <Content Include="spexplorerjs\src\pages\app1\app1.css" />
     <Content Include="spexplorerjs\src\pages\app1\app1.html" />
@@ -574,7 +620,7 @@
     <Content Include="spexplorerjs\src\pages\tests\index.js" />
     <Content Include="spexplorerjs\src\scripts\mytransforms.js" />
     <Content Include="spexplorerjs\src\scripts\widgettransforms.js" />
-    <Content Include="spexplorerjs\src\components\sp\spFileReport.js" />
+    <Content Include="spexplorerjs\src\components\sp\widgets\spFileReport.js" />
     <Content Include="spexplorerjs\src\snippets\sp.field.jslink.js" />
     <Content Include="spexplorerjs\uglify.js">
       <DependentUpon>scripts.js</DependentUpon>
@@ -584,8 +630,8 @@
     <Content Include="spexplorerjs\LICENSE" />
     <Content Include="spexplorerjs\package.json" />
     <Content Include="spexplorerjs\README.md" />
-    <Content Include="spexplorerjs\src\components\sp\list.editor.js" />
-    <Content Include="spexplorerjs\src\components\sp\field.selector.js" />
+    <Content Include="spexplorerjs\src\components\sp\widgets\list.editor.js" />
+    <Content Include="spexplorerjs\src\components\sp\widgets\field.selector.js" />
     <Content Include="spexplorerjs\views\components.ejs" />
     <None Include="packages.config" />
     <Content Include="spexplorerjs\views\caml.ejs" />
@@ -599,6 +645,8 @@
     <Content Include="spexplorerjs\src\typings\sharepoint\LICENSE" />
     <Content Include="spexplorerjs\src\typings\sharepoint\package.json" />
     <Content Include="spexplorerjs\src\typings\sharepoint\README.md" />
+    <Content Include="spexplorerjs\public\components\logger\package.json" />
+    <Content Include="spexplorerjs\public\components\sp\api\package.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -626,7 +674,7 @@
     <Folder Include="spexplorerjs\public\snippets\" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="spexplorerjs\src\components\sp\sp.list.ts" />
+    <TypeScriptCompile Include="spexplorerjs\src\components\sp\api\sp.list.ts" />
     <TypeScriptCompile Include="spexplorerjs\src\typings\microsoft-ajax\index.d.ts" />
     <TypeScriptCompile Include="spexplorerjs\src\typings\node\index.d.ts" />
     <TypeScriptCompile Include="spexplorerjs\src\typings\node\inspector.d.ts" />
