@@ -873,7 +873,7 @@
     <Folder Include="spexplorerjs\public\snippets\" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="spexplorerjs\src\components\sp\api\sp.list.ts" />
+    <TypeScriptCompile Include="spexplorerjs\src\components\sp\widgets\test.ts" />
     <TypeScriptCompile Include="spexplorerjs\src\typings\microsoft-ajax\index.d.ts" />
     <TypeScriptCompile Include="spexplorerjs\src\typings\node\index.d.ts" />
     <TypeScriptCompile Include="spexplorerjs\src\typings\node\inspector.d.ts" />
