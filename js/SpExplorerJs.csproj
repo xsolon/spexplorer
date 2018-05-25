@@ -339,6 +339,7 @@
     <Content Include="spexplorerjs\public\components\sp\api\api.local.js">
       <DependentUpon>api.js</DependentUpon>
     </Content>
+    <Content Include="spexplorerjs\public\components\sp\api\api.min.js" />
     <Content Include="spexplorerjs\public\components\sp\api\tester.aspx" />
     <Content Include="spexplorerjs\public\components\sp\api\tester.dev.aspx" />
     <Content Include="spexplorerjs\public\components\sp\api\tester.js" />
@@ -843,6 +844,17 @@
     <Content Include="spexplorerjs\src\scripts\widgettransforms.js" />
     <Content Include="spexplorerjs\src\components\sp\widgets\spFileReport.js" />
     <Content Include="spexplorerjs\src\snippets\sp.field.jslink.js" />
+    <Content Include="spexplorerjs\src\vendor\jstree\jstree.js" />
+    <Content Include="spexplorerjs\src\vendor\jstree\themes\default-dark\32px.png" />
+    <Content Include="spexplorerjs\src\vendor\jstree\themes\default-dark\40px.png" />
+    <Content Include="spexplorerjs\src\vendor\jstree\themes\default-dark\style.css" />
+    <Content Include="spexplorerjs\src\vendor\jstree\themes\default-dark\style.min.css" />
+    <Content Include="spexplorerjs\src\vendor\jstree\themes\default-dark\throbber.gif" />
+    <Content Include="spexplorerjs\src\vendor\jstree\themes\default\32px.png" />
+    <Content Include="spexplorerjs\src\vendor\jstree\themes\default\40px.png" />
+    <Content Include="spexplorerjs\src\vendor\jstree\themes\default\style.css" />
+    <Content Include="spexplorerjs\src\vendor\jstree\themes\default\style.min.css" />
+    <Content Include="spexplorerjs\src\vendor\jstree\themes\default\throbber.gif" />
     <Content Include="spexplorerjs\uglify.js">
       <DependentUpon>scripts.js</DependentUpon>
     </Content>
